@@ -26,14 +26,15 @@ public class RREF {
      * No return
      * **/
     private static void init(){
-        Scanner newScan = new Scanner( System.in );
+        try (Scanner newScan = new Scanner( System.in )) {
+            System.out.println();
+            String newInput = newScan.nextLine();
+            System.out.println( "Input = " + newInput );
+        }
 
-        System.out.println();
-        String newInput = newScan.nextLine();
-        System.out.println( "Input = " + newInput );
         //get input
-        int x = 0;  //user value
-        int y = 0;  //user value
+        int x = getX();  //user value
+        int y = getY();  //user value
         int[][] matrix = new int[x][y]; //placeholders, should be input n and input m
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
@@ -41,21 +42,25 @@ public class RREF {
                 matrix[i][j] = 0;    //user input
             }
         }
+
+        int[][] multiplier = new int[0][0];
+        multiply( multiplier );
+
     }
 
-    private int[][] multiply( int[][] current ){
+    private static int[][] multiply( int[][] current ){
         int[][] matrix = current;
     
         return matrix;
     }
 
     //Get x size
-    private int getX(){
+    private static int getX(){
         return 0;
     }
 
     //Get y size
-    private int getY(){
+    private static int getY(){
         return 0;
     }
 }
