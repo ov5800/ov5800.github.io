@@ -1,4 +1,1 @@
-Hello
-
-This is a work in progress
-README
+This is a work in progress of my current website
