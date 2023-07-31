@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    font-size: 20px;
+  }
+a
+  {
+    font-size: 20px;
+  }
+h1
+  {
+    color:Orange;
+    font-size: 60px;
+  }
