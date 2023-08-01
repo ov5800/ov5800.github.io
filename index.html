@@ -45,7 +45,7 @@
     request.send();
   </script>
 
-  <script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
     $.get("https://api.ipdata.co?api-key=e9d22a4ebc70c0c7d22ac9698ebf5d8db79ec978753448595a439ef5", function (response) {
 	  $("#response").html(JSON.stringify(response, null, 4));
     }, "jsonp");
