@@ -31,5 +31,14 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    let apiKey = 'e9d22a4ebc70c0c7d22ac9698ebf5d8db79ec978753448595a439ef5';
+    $.getJSON('https://api.ipdata.co?api-key=' + apiKey, function(data) {
+    console.log(JSON.stringify(data, null, 2));
+    });
+
+  </script>
+
+
 </body>
 </html>
