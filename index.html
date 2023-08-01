@@ -23,7 +23,7 @@
 
   <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
     <div class="shrink-0">
-      <img class="h-12 w-12" src="./src/images/favicon.ico" alt="ChitChat Logo">
+      <img class="h-12 w-12" src="./src/images/favicon.ico" alt="Logo">
     </div>
     <div>
       <div class="text-xl font-medium text-black">ChitChat</div>
@@ -44,6 +44,14 @@
     };
     request.send();
   </script>
+
+  <script>
+    $.get("https://api.ipdata.co?api-key=e9d22a4ebc70c0c7d22ac9698ebf5d8db79ec978753448595a439ef5", function (response) {
+	  $("#response").html(JSON.stringify(response, null, 4));
+    }, "jsonp");
+  </script>
+
+<pre id="response"></pre>
 
 
 </body>
